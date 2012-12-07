@@ -10,8 +10,8 @@ Obsoletes:      docbk_4
 Requires:       iso_ent
 Requires:       libxml2
 %define regcat /usr/bin/sgml-register-catalog
-PreReq:         %{regcat} /usr/bin/xmlcatalog sgml-skel
-PreReq:         sed grep awk
+Requires(pre):         %{regcat} /usr/bin/xmlcatalog sgml-skel
+Requires(pre):         sed grep awk
 Summary:        DocBook DTD Version 4.x
 License:        BSD-3-Clause ; MIT
 Group:          Productivity/Publishing/DocBook
