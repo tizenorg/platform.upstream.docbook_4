@@ -1,0 +1,15 @@
+--- docbook.dcl.~1~	2005-01-27 14:59:49.000000000 +0100
++++ docbook.dcl	2005-08-17 13:48:37.000000000 +0200
+@@ -61,8 +61,8 @@
+ 	NAMING
+ 		LCNMSTRT ""
+ 		UCNMSTRT ""
+-		LCNMCHAR ".-_"
+-		UCNMCHAR ".-_"
++		LCNMCHAR ".-_:"
++		UCNMCHAR ".-_:"
+ 		NAMECASE
+ 			GENERAL YES
+ 			ENTITY  NO
+
+Diff finished.  Wed Aug 17 13:48:41 2005
