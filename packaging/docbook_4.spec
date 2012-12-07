@@ -17,6 +17,7 @@ License:        BSD-3-Clause ; MIT
 Group:          Productivity/Publishing/DocBook
 Version:        4.5
 Release:        0
+Source0:        dummy-%{version}.tar.bz2
 Source7:        CATALOG.docbook_4
 # DocBook 4.1
 Source410:      http://www.oasis-open.org/docbook/sgml/4.1/docbk41.zip
