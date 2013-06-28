@@ -48,6 +48,7 @@ Source451:      http://www.oasis-open.org/docbook/xml/4.5/docbook-xml-4.5.zip
 Source452:      http://www.docbook.org/rng/4.5/docbook-rng-4.5.zip
 Source453:      http://www.docbook.org/xsd/4.5/docbook-xsd-4.5.zip
 Source454:      CATALOG.db45xml
+Source1001: 	docbook_4.manifest
 Patch0:         docbook-4-3-cat.diff
 Patch1:         docbook-4-3.diff
 Patch2:         docbook-4-3-xml-cat.diff
@@ -86,6 +87,7 @@ Schema.
 
 %prep
 %setup -n %{name} -c -T
+cp %{SOURCE1001} .
 %{INSTALL_DIR} dtd/4.{1,2,3,4,5} 4.{1,2,3,4,5}xml
 echo "**** %{S:410}"
 pushd dtd/4.1
@@ -353,6 +355,7 @@ if [ ! -f %{xml_sysconf_dir}/%{FOR_ROOT_CAT} -a -x /usr/bin/edit-xml-catalog ] ;
 fi
 
 %files
+%manifest %{name}.manifest
 %defattr(-, root, root)
 %config %{sgml_config_dir}/CATALOG.*
 %{sgml_dir}/CATALOG.*
